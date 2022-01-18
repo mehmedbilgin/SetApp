@@ -47,6 +47,7 @@ namespace SetApp
         private void t_out_stock_Click(object sender, EventArgs e)
         {
             Cikar stokCikar = new Cikar();
+            stokCikar.name = ad;
             stokCikar.Show();
             
         }
