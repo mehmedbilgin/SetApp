@@ -66,6 +66,7 @@ namespace SetApp
             this.t_out_stock.TabIndex = 2;
             this.t_out_stock.Text = "Stok Çıkar";
             this.t_out_stock.UseVisualStyleBackColor = true;
+            this.t_out_stock.Click += new System.EventHandler(this.t_out_stock_Click);
             // 
             // show_stock
             // 

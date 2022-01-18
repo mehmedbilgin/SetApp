@@ -30,12 +30,18 @@ namespace SetApp
         {
             StokEkle stokEkle = new StokEkle();
             stokEkle.Show();
-            this.Hide();
+            
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
             label3.Text = ad;
+        }
+
+        private void t_out_stock_Click(object sender, EventArgs e)
+        {
+            Stok_Cıkar stok_Cıkar = new Stok_Cıkar();
+            stok_Cıkar.Show();
         }
     }
 }

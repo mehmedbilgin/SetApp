@@ -94,6 +94,7 @@ namespace SetApp
             this.warning_btn.TabIndex = 5;
             this.warning_btn.Text = "Uyarılar";
             this.warning_btn.UseVisualStyleBackColor = true;
+            this.warning_btn.Click += new System.EventHandler(this.warning_btn_Click);
             // 
             // cikis_btn
             // 

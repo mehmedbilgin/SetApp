@@ -28,7 +28,7 @@ namespace SetApp
         private void giris_btn_Click(object sender, EventArgs e)
         {
             string sorgu = "SELECT * FROM kullanicilar WHERE kullanici_adi=@usrname AND parola=@pswd";
-            con = new SqlConnection("Data Source=KADIR;Initial Catalog=set;Integrated Security=True");
+            con = new SqlConnection("Data Source=DESKTOP-01ROSI4\\SQLEXPRESS;Initial Catalog=set;Integrated Security=True");
             cmd = new SqlCommand();
             con.Open();
             cmd.Connection = con;
@@ -71,7 +71,7 @@ namespace SetApp
         {
             AdminScreen admin_screen = new AdminScreen();
             admin_screen.Show();
-            this.Hide();
+            
         }
     }
 }
