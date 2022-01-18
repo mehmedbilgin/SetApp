@@ -13,8 +13,7 @@ namespace SetApp
 {
     public partial class Add_user : Form
     {
-        SqlConnection con;
-        SqlCommand cmd;
+        Connection con = new Connection();
         public Add_user()
         {
             InitializeComponent();
@@ -22,15 +21,11 @@ namespace SetApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            con = new SqlConnection("Data Source=DESKTOP-01ROSI4\\SQLEXPRESS;Initial Catalog=set;Integrated Security=True");
-            cmd = new SqlCommand();
-            con.Open();
-            cmd.Connection = con;
-            cmd.CommandText = "INSERT INTO kullanicilar (kullanici_adi, parola) VALUES(@ad,@pw)";
-            cmd.Parameters.AddWithValue("@ad", kullanici_adi.Text);
-            cmd.Parameters.AddWithValue("@pw", parola.Text);
-            cmd.ExecuteNonQuery();
-            con.Close();
+            string userInsert = "INSERT INTO kullanicilar (kullanici_adi, parola) VALUES(@ad,@pw)";
+            SqlCommand command = new SqlCommand(userInsert, con.baglan());
+            command.Parameters.AddWithValue("@ad", kullanici_adi.Text);
+            command.Parameters.AddWithValue("@pw", parola.Text);
+            
             MessageBox.Show(kullanici_adi.Text +"kullanıcısı eklendi");
         }
     }
