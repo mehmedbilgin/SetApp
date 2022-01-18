@@ -41,6 +41,7 @@ namespace SetApp
                 if (passwd.Text.Equals(dbase))
                 {
                     Main main_form = new Main();
+                    main_form.ad = kullanici_adi.Text;
                     main_form.Show();
                     this.Hide();
                     con.Close();

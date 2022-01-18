@@ -29,22 +29,14 @@ namespace SetApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tur = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.stok_gor = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.stok_gor)).BeginInit();
             this.SuspendLayout();
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(43, 133);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(734, 291);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // label1
             // 
@@ -64,17 +56,13 @@ namespace SetApp
             this.label2.TabIndex = 2;
             this.label2.Text = "Tür Seçin";
             // 
-            // comboBox1
+            // tur
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "PN",
-            "DN",
-            "JIS"});
-            this.comboBox1.Location = new System.Drawing.Point(225, 82);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 28);
-            this.comboBox1.TabIndex = 3;
+            this.tur.FormattingEnabled = true;
+            this.tur.Location = new System.Drawing.Point(225, 82);
+            this.tur.Name = "tur";
+            this.tur.Size = new System.Drawing.Size(178, 28);
+            this.tur.TabIndex = 3;
             // 
             // button1
             // 
@@ -84,28 +72,50 @@ namespace SetApp
             this.button1.TabIndex = 4;
             this.button1.Text = "Göster";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // stok_gor
+            // 
+            this.stok_gor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.stok_gor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.stok_gor.Location = new System.Drawing.Point(81, 124);
+            this.stok_gor.Name = "stok_gor";
+            this.stok_gor.RowHeadersWidth = 51;
+            this.stok_gor.RowTemplate.Height = 29;
+            this.stok_gor.Size = new System.Drawing.Size(637, 293);
+            this.stok_gor.TabIndex = 5;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(590, 83);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(128, 29);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Hepsini Göster";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // StokGor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.stok_gor);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.tur);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listView1);
             this.Name = "StokGor";
             this.Text = "StokGor";
             this.Load += new System.EventHandler(this.StokGor_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.stok_gor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader TÜR;
         private System.Windows.Forms.ColumnHeader ÖLÇÜ;
         private System.Windows.Forms.ColumnHeader SERTİFİKA;
@@ -114,7 +124,9 @@ namespace SetApp
         private System.Windows.Forms.ColumnHeader ADET;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox tur;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView stok_gor;
+        private System.Windows.Forms.Button button2;
     }
 }

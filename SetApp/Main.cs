@@ -12,8 +12,10 @@ namespace SetApp
 {
     public partial class Main : Form
     {
+        public string ad;
         public Main()
         {
+            
             InitializeComponent();
         }
 
@@ -21,7 +23,7 @@ namespace SetApp
         {
             StokGor stokGor = new StokGor();
             stokGor.Show();
-            this.Hide();
+            
         }
 
         private void add_stock_Click(object sender, EventArgs e)
@@ -29,6 +31,11 @@ namespace SetApp
             StokEkle stokEkle = new StokEkle();
             stokEkle.Show();
             this.Hide();
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            label3.Text = ad;
         }
     }
 }
