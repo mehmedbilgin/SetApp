@@ -42,5 +42,12 @@ namespace SetApp
         {
             MessageBox.Show("Gösterilecek uyarı bulunmamaktadır.");
         }
+
+        private void cikis_btn_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+        }
     }
 }

@@ -50,6 +50,7 @@ namespace SetApp
             this.admin_sifre.Name = "admin_sifre";
             this.admin_sifre.Size = new System.Drawing.Size(203, 27);
             this.admin_sifre.TabIndex = 1;
+            this.admin_sifre.UseSystemPasswordChar = true;
             // 
             // şifre
             // 

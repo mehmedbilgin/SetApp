@@ -104,6 +104,7 @@ namespace SetApp
             this.cikis_btn.TabIndex = 6;
             this.cikis_btn.Text = "Çıkış";
             this.cikis_btn.UseVisualStyleBackColor = true;
+            this.cikis_btn.Click += new System.EventHandler(this.cikis_btn_Click);
             // 
             // AdminMain
             // 

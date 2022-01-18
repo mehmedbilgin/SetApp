@@ -30,7 +30,7 @@ namespace SetApp
         {
             StokEkle stokEkle = new StokEkle();
             stokEkle.Show();
-            this.Hide();
+            
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -42,7 +42,13 @@ namespace SetApp
         {
             Vana_ekle vanaEkle = new Vana_ekle();
             vanaEkle.Show();
-            this.Hide();
+            
+        }
+        private void t_out_stock_Click(object sender, EventArgs e)
+        {
+            Stok_Cıkar stok_Cıkar = new Stok_Cıkar();
+            stok_Cıkar.Show();
+            
         }
     }
 }
