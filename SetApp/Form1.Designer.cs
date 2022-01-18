@@ -41,50 +41,54 @@ namespace SetApp
             // title
             // 
             this.title.AutoSize = true;
-            this.title.Location = new System.Drawing.Point(361, 47);
-            this.title.MaximumSize = new System.Drawing.Size(150, 80);
+            this.title.Location = new System.Drawing.Point(316, 35);
+            this.title.MaximumSize = new System.Drawing.Size(131, 60);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(76, 20);
+            this.title.Size = new System.Drawing.Size(59, 15);
             this.title.TabIndex = 0;
             this.title.Text = "SET VANA";
             // 
             // kullanici_adi
             // 
-            this.kullanici_adi.Location = new System.Drawing.Point(318, 129);
+            this.kullanici_adi.Location = new System.Drawing.Point(278, 97);
+            this.kullanici_adi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kullanici_adi.Name = "kullanici_adi";
-            this.kullanici_adi.Size = new System.Drawing.Size(195, 27);
+            this.kullanici_adi.Size = new System.Drawing.Size(171, 23);
             this.kullanici_adi.TabIndex = 1;
             // 
             // passwd
             // 
-            this.passwd.Location = new System.Drawing.Point(318, 191);
+            this.passwd.Location = new System.Drawing.Point(278, 143);
+            this.passwd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.passwd.Name = "passwd";
-            this.passwd.Size = new System.Drawing.Size(195, 27);
+            this.passwd.Size = new System.Drawing.Size(171, 23);
             this.passwd.TabIndex = 2;
+            this.passwd.UseSystemPasswordChar = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(162, 130);
+            this.label1.Location = new System.Drawing.Point(142, 98);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 20);
+            this.label1.Size = new System.Drawing.Size(31, 15);
             this.label1.TabIndex = 3;
             this.label1.Text = "Ad : ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(162, 192);
+            this.label2.Location = new System.Drawing.Point(142, 144);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 20);
+            this.label2.Size = new System.Drawing.Size(39, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Şifre : ";
             // 
             // giris_btn
             // 
-            this.giris_btn.Location = new System.Drawing.Point(346, 263);
+            this.giris_btn.Location = new System.Drawing.Point(303, 197);
+            this.giris_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.giris_btn.Name = "giris_btn";
-            this.giris_btn.Size = new System.Drawing.Size(127, 40);
+            this.giris_btn.Size = new System.Drawing.Size(111, 30);
             this.giris_btn.TabIndex = 5;
             this.giris_btn.Text = "Giriş";
             this.giris_btn.UseVisualStyleBackColor = true;
@@ -92,9 +96,10 @@ namespace SetApp
             // 
             // admin_giris
             // 
-            this.admin_giris.Location = new System.Drawing.Point(361, 362);
+            this.admin_giris.Location = new System.Drawing.Point(316, 272);
+            this.admin_giris.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.admin_giris.Name = "admin_giris";
-            this.admin_giris.Size = new System.Drawing.Size(94, 29);
+            this.admin_giris.Size = new System.Drawing.Size(82, 22);
             this.admin_giris.TabIndex = 6;
             this.admin_giris.Text = "Admin Giriş";
             this.admin_giris.UseVisualStyleBackColor = true;
@@ -102,9 +107,9 @@ namespace SetApp
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(700, 338);
             this.Controls.Add(this.admin_giris);
             this.Controls.Add(this.giris_btn);
             this.Controls.Add(this.label2);
@@ -112,6 +117,7 @@ namespace SetApp
             this.Controls.Add(this.passwd);
             this.Controls.Add(this.kullanici_adi);
             this.Controls.Add(this.title);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Setvana";
             this.ResumeLayout(false);

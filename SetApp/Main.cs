@@ -37,5 +37,12 @@ namespace SetApp
         {
             label3.Text = ad;
         }
+
+        private void add_vana_Click(object sender, EventArgs e)
+        {
+            Vana_ekle vanaEkle = new Vana_ekle();
+            vanaEkle.Show();
+            this.Hide();
+        }
     }
 }
