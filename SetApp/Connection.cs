@@ -14,6 +14,7 @@ namespace SetApp
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-01ROSI4\\SQLEXPRESS;Initial Catalog=set;Integrated Security=True");
             con.Open();
             return con;
+            // commit calisiyor mu :)
         }
     }
 }
